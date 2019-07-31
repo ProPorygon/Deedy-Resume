@@ -17,32 +17,6 @@
 % operating system or comment the line out to use the default font.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \documentclass[]{deedy-resume}
@@ -56,17 +30,10 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     LAST UPDATED DATE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Kevin}{Renner}{\href{mailto:krenner2@illinois.edu}{krenner2@illinois.edu} | 440-292-7388 | 19504 Cavendish Ct. North Royalton, OH 44133}
+\namesection{Kevin}{Renner}{\href{mailto:krenner529@gmail.com}{krenner529@gmail.com} | 440-292-7388}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -99,6 +66,39 @@ LinkedIn://  \href{https://www.linkedin.com/in/kevin-renner}{\bf kevin-renner} \
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+Python \\
+Javascript \\
+Java \\
+C \\
+\vspace{\topsep}
+\location{Familiar:}
+Scala \\
+C++ \\
+GoLang \\
+SQL \\
+\vspace{\topsep}
+\subsection{Libraries, Frameworks, Tools}
+Django \\
+GraphQL \\
+Kubernetes \\
+Helm \\
+Pulsar \\
+Flask \\
+Node.js \\
+Express.js \\
+Git \\
+Jenkins \\
+GDB \\
+Maven
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -107,30 +107,13 @@ LinkedIn://  \href{https://www.linkedin.com/in/kevin-renner}{\bf kevin-renner} \
 Algorithms \\
 Distributed Systems \\
 Software Engineering \\
-Software Engineering II \\
 Systems Programming \\
 Database Systems \\
 Data Structures \\
-Discrete Structures \\
 Computer Architecture \\
 Computer Security \\
 Virtual Reality \\
-\sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\location{Proficient:}
-Python \textbullet{} Javascript \textbullet{} Java \textbullet{} C \\
-\vspace{\topsep}
-\location{Familiar:}
-C++ \textbullet{} GoLang \textbullet{} SQL \textbullet{} HTML \textbullet{} CSS\\
-\vspace{\topsep}
-\subsection{Libraries, Frameworks, Tools}
-Node.js \textbullet{} Django \textbullet{} Flask \textbullet{} Express.js \textbullet{} Git \textbullet{} Amazon S3 \textbullet{} Android SDK \textbullet{} SVN \textbullet{} Jenkins \textbullet{} GDB \textbullet{} Maven \textbullet{} Android Studio\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -147,16 +130,31 @@ Node.js \textbullet{} Django \textbullet{} Flask \textbullet{} Express.js \textb
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{EverMem, Inc. (FlipWord)}
-\descript{| Software Engineer Intern}
-\location{June 2017 - August 2017 | Palo Alto, CA}
+\runsubsection{Petuum}
+\descript{| Software Engineer}
+\location{June 2018 - Present | Pittsburgh, PA}
 \vspace{\topsep}
 \begin{tightemize}
-\item Implemented new UI redesign in the Chrome extension's popup quizzes
-\item Improved reusability of UI through the creation of a shared UI library
-\item Created new backend APIs for the application using Node.js and the Express framework
-\item Developed a system for allowing users to create and share audio recordings, automatically graded using Google's Speech API
-\item Refactored code to be cleaner, more readable, and use more modern features of Javascript (ES6 and ES7)
+\item Primary maintainer of the core library and service for building data flows on Petuum's distributed machine learning platform.
+\item Developed API-level representation of batch and streaming data flow graphs.
+\item Improved product security by integrating service API components with the platform's role-based access control system.
+\item Facilitated project maintenance by building an API for creating and updating graphs declared in yaml files.
+\item Enabled easier project sharing and deployment by creating an API to export and import data flow graphs on the platform, along with any project dependencies.
+\item Identified bottlenecks on the platform by profiling execution performance via timing utilities and flame graphs.
+\item Improved test quality in the library's repository by mocking out remote API calls.
+\item Deployed service via Helm on Kubernetes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FlipWord}
+\descript{| Software Engineer Intern}
+\location{June 2017 - August 2017 | Palo Alto, CA}
+\begin{tightemize}
+\item Improved user experience by implementing a new UI redesign in the Chrome extension's popup quizzes.
+\item Improved reusability of UI through the creation of a shared UI library.
+\item Created new backend APIs for the application using Node.js and the Express framework.
+\item Added additional interactivity to the product by developing a system that allows users to create and share audio recordings, automatically graded using Google's Speech API.
+\item Improved developer experience by refactoring code to be cleaner, more readable, and use more modern features of Javascript (ES6 and ES7).
 \end{tightemize}
 \sectionsep
 
@@ -164,11 +162,11 @@ Node.js \textbullet{} Django \textbullet{} Flask \textbullet{} Express.js \textb
 \descript{| Backend Web Developer Intern}
 \location{May 2016 - December 2016 | Champaign, IL}
 \begin{tightemize}
-\item Worked on Django backend for Agrible's \textit{Morning Farm Report} website
-\item Implemented a Redis caching solution to improve site performance
-\item Designed a system using Google Drive APIs to allow for quality control checking on data input
-\item Developed solutions to import and map data from other companies' APIs to Agrible's data schema
-\item Created an automated system to remove old, unused data from S3 once it was no longer required
+\item Worked on Django backend for Agrible's \textit{Morning Farm Report} website.
+\item Improved site performance by implementing a Redis caching solution.
+\item Improved quality control checking on data input by designing a system to interact with stored data through Google Drive APIs.
+\item Developed solutions to import and map data from other companies' APIs to Agrible's data schema.
+\item Saved AWS S3 storage costs by creating an automated system to remove old and unused data.
 \end{tightemize}
 \sectionsep
 
@@ -181,47 +179,11 @@ Node.js \textbullet{} Django \textbullet{} Flask \textbullet{} Express.js \textb
 \descript{| HackIllinois 2016}
 \location{Spring 2016 | Champaign, IL}
 \begin{tightemize}
-\item Utilized Node.js along with GitHub's Electron framework to build a cross-platform app
-\item Created a smart note-taking system by retrieving relevant data from Wolfram-Alpha, which could be inserted into notes
-\item Collaborated with a team of two others to develop the app
-\item Won award for best use of Wolfram's API
+\item Created a smart note-taking system which can retrieve data automatically from Wolfram-Alpha and add it to notes.
+\item Collaborated with two team members to build LookNote using Node.js and Electron.
+\item Won award for best use of Wolfram's API.
 \end{tightemize}
 \sectionsep
-
-\runsubsection{FindMeBot}
-\descript{| HackIllinois 2017}
-\location{Spring 2017, Champaign, IL}
-\begin{tightemize}
-\item Built a chatbot using Python hosted on Heroku to interact with GroupMe chat
-\item Used the Microsoft Cognitive Services API to tag pictures of users posted in the chat
-\item Provided ability for users to upload a photo of themselves for comparison
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Restaurant Menu Web App}
-\descript{| Database Systems Project}
-\location{Fall 2015 | Champaign, IL}
-\begin{tightemize}
-\item Used Python Flask and Bootstrap to create a digital menu interface for customers
-\item Successfully worked with a group of three other students
-\item Created a SQL databse to track customer purchases and give menu recommendations based off of past purchase combinations
-\end{tightemize}
-\sectionsep
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Extracurricular Involvement
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Extracurricular Involvement}
-% \runsubsection{ACM}\\
-% \location{2014 - Present}
-% \sectionsep
-%
-% \runsubsection{Sigma Phi Delta}
-% \descript{Engineering Fraternity}
-% \location{2015 - Present}
-% \sectionsep
 
 \end{minipage}
 \end{document}
