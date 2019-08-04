@@ -55,14 +55,16 @@
 College of Engineering \\
 \location{ GPA: 3.27 / 4.0 }
 \sectionsep
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links}
-Github:// \href{https://github.com/ProPorygon}{\bf ProPorygon} \\
-LinkedIn://  \href{https://www.linkedin.com/in/kevin-renner}{\bf kevin-renner} \\
+Github: \href{https://github.com/ProPorygon}{\bf ProPorygon} \\
+LinkedIn:  \href{https://www.linkedin.com/in/kevin-renner}{\bf kevin-renner} \\
+\sectionsep
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,11 +79,13 @@ Javascript \\
 Java \\
 C \\
 \vspace{\topsep}
+\vspace{\topsep}
 \location{Familiar:}
 Scala \\
 C++ \\
 GoLang \\
 SQL \\
+\vspace{\topsep}
 \vspace{\topsep}
 \subsection{Libraries, Frameworks, Tools}
 Django \\
@@ -96,23 +100,6 @@ Git \\
 Jenkins \\
 GDB \\
 Maven
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-
-Algorithms \\
-Distributed Systems \\
-Software Engineering \\
-Systems Programming \\
-Database Systems \\
-Data Structures \\
-Computer Architecture \\
-Computer Security \\
-Virtual Reality \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,23 +118,23 @@ Virtual Reality \\
 
 \section{Experience}
 \runsubsection{Petuum}
-\descript{| Software Engineer}
+\descript{|  Software Engineer}
 \location{June 2018 - Present | Pittsburgh, PA}
 \vspace{\topsep}
 \begin{tightemize}
-\item Primary maintainer of the core library and service for building data flows on Petuum's distributed machine learning platform.
-\item Developed API-level representation of batch and streaming data flow graphs.
+\item Primary maintainer of the core library and service for building data-flows on Petuum's distributed machine learning platform.
+\item Developed API to interact with data-flow graphs.
 \item Improved product security by integrating service API components with the platform's role-based access control system.
-\item Facilitated project maintenance by building an API for creating and updating graphs declared in yaml files.
-\item Enabled easier project sharing and deployment by creating an API to export and import data flow graphs on the platform, along with any project dependencies.
+\item Facilitated project maintenance by building an API for creating and updating graphs declared in YAML files.
+\item Enabled easier project sharing and deployment by creating an API to export and import data-flow graphs on the platform, along with any project dependencies.
 \item Identified bottlenecks on the platform by profiling execution performance via timing utilities and flame graphs.
 \item Improved test quality in the library's repository by mocking out remote API calls.
-\item Deployed service via Helm on Kubernetes.
+\item Deployed services via Helm on Kubernetes.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{FlipWord}
-\descript{| Software Engineer Intern}
+\descript{|  Software Engineer Intern}
 \location{June 2017 - August 2017 | Palo Alto, CA}
 \begin{tightemize}
 \item Improved user experience by implementing a new UI redesign in the Chrome extension's popup quizzes.
@@ -159,7 +146,7 @@ Virtual Reality \\
 \sectionsep
 
 \runsubsection{Agrible}
-\descript{| Backend Web Developer Intern}
+\descript{|  Backend Web Developer Intern}
 \location{May 2016 - December 2016 | Champaign, IL}
 \begin{tightemize}
 \item Worked on Django backend for Agrible's \textit{Morning Farm Report} website.
@@ -176,7 +163,7 @@ Virtual Reality \\
 
 \section{Projects}
 \runsubsection{LookNote}
-\descript{| HackIllinois 2016}
+\descript{|  HackIllinois 2016}
 \location{Spring 2016 | Champaign, IL}
 \begin{tightemize}
 \item Created a smart note-taking system which can retrieve data automatically from Wolfram-Alpha and add it to notes.
